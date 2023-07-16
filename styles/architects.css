@@ -20,6 +20,9 @@
   background: #ff900e;
   border: 0;
 }
+.text-light-gray {
+  color: #727272;
+}
 /* ==========================================================================
    header styles
    ========================================================================== */
@@ -76,49 +79,12 @@ nav li a {
   margin-top: 20px;
 }
 /* ==========================================================================
-   Responsive Media Queries
-   ========================================================================== */
-
-/* for small screen */
-@media screen and (max-width: 576px) {
-  header {
-    padding: 20px;
-  }
-  nav {
-    flex-direction: column;
-  }
-  nav li a {
-    margin-right: 3.5rem;
-  }
-  nav > div {
-    margin: 0 auto;
-  }
-}
-
-/* for medium source */
-
-@media screen and (min-width: 576px) and (max-width: 992px) {
-  header {
-    padding: 50px;
-  }
-  nav {
-    flex-direction: column;
-  }
-  nav li a {
-    margin-right: 3.5rem;
-  }
-  nav > div {
-    margin: 0 auto;
-  }
-}
-
-/* ==========================================================================
     main styles
    ========================================================================== */
 
 main {
   max-width: 1440px;
-  margin: 0 auto;
+  margin: 70px auto;
 }
 .team-container {
   display: flex;
@@ -136,10 +102,53 @@ main {
   font-size: 2.8125rem;
 }
 .quick-list {
-  color: #727272;
   font-weight: 500;
 }
 .features {
   color: #ff900e;
   font-weight: 700;
+}
+/* ==========================================================================
+   Responsive Media Queries
+   ========================================================================== */
+
+/* for small screen */
+@media screen and (max-width: 576px) {
+  header {
+    padding: 20px;
+  }
+  nav,
+  .team-container {
+    flex-direction: column;
+  }
+  nav li a {
+    margin-right: 3.5rem;
+  }
+  nav > div {
+    margin: 0 auto;
+  }
+  .team-img-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .team-content {
+    padding: 0 20px;
+  }
+}
+
+/* for medium source */
+
+@media screen and (min-width: 576px) and (max-width: 992px) {
+  header {
+    padding: 50px;
+  }
+  nav,
+  .team-container {
+    flex-direction: column;
+  }
+  nav li a {
+    margin-right: 3.5rem;
+  }
+  nav > div {
+    margin: 0 auto;
+  }
 }
