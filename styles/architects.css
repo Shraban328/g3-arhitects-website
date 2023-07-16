@@ -1,13 +1,25 @@
 /* work sans font from google fonts */
 
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,400;1,700&family=Open+Sans:wght@400;700;800&family=Work+Sans:wght@400;500;600;700;800&display=swap");
-
+/* ==========================================================================
+   Shared styles
+   ========================================================================== */
 * {
   font-family: "Lato", sans-serif;
   font-family: "Open Sans", sans-serif;
   font-family: "Work Sans", sans-serif;
 }
 
+.btn-primary {
+  padding: 25px;
+  font-size: 1.25rem;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  color: #fff;
+  background: #ff900e;
+  border: 0;
+}
 /* ==========================================================================
    header styles
    ========================================================================== */
@@ -55,4 +67,47 @@ nav li a {
   font-size: 4rem;
   font-weight: 700;
   color: #131313;
+}
+.banner-description {
+  color: #727272;
+}
+.banner-img {
+  width: 100%;
+  margin-top: 20px;
+}
+/* ==========================================================================
+   Responsive Media Queries
+   ========================================================================== */
+
+/* for small screen */
+@media screen and (max-width: 576px) {
+  header {
+    padding: 20px;
+  }
+  nav {
+    flex-direction: column;
+  }
+  nav li a {
+    margin-right: 3.5rem;
+  }
+  nav > div {
+    margin: 0 auto;
+  }
+}
+
+/* for medium source */
+
+@media screen and (min-width: 576px) and (max-width: 992px) {
+  header {
+    padding: 50px;
+  }
+  nav {
+    flex-direction: column;
+  }
+  nav li a {
+    margin-right: 3.5rem;
+  }
+  nav > div {
+    margin: 0 auto;
+  }
 }
