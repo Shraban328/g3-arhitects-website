@@ -23,6 +23,10 @@
 .text-light-gray {
   color: #727272;
 }
+
+.section-title {
+  font-size: 2.8125rem;
+}
 /* ==========================================================================
    header styles
    ========================================================================== */
@@ -98,9 +102,7 @@ main {
 .team-content {
   padding: 0 70px;
 }
-.team-content-title {
-  font-size: 2.8125rem;
-}
+
 .quick-list {
   font-weight: 500;
 }
@@ -109,6 +111,34 @@ main {
   font-weight: 700;
 }
 /* ==========================================================================
+   Facts_styles
+   ========================================================================== */
+.facts-cards-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.facts-cards-container .card {
+  border-radius: 8px;
+  border: 1px solid #ff900e;
+  text-align: center;
+  padding: 30px;
+}
+
+.facts-cards-container .card-stats {
+  font-size: 2.8125rem;
+  font-weight: 600;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.facts-cards-container .card-title {
+  font-weight: 600;
+  font-size: 1.25rem;
+  margin-top: 3px;
+}
+/*
+==========================================================================
    Responsive Media Queries
    ========================================================================== */
 
