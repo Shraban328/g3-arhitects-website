@@ -137,6 +137,18 @@ main {
   font-size: 1.25rem;
   margin-top: 3px;
 }
+/* ==========================================================================
+  sponsors_styles
+   ========================================================================== */
+.sponsors {
+  text-align: center;
+}
+.sponsors-img-container {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 50px;
+}
+
 /*
 ==========================================================================
    Responsive Media Queries
@@ -148,7 +160,9 @@ main {
     padding: 20px;
   }
   nav,
-  .team-container {
+  .team-container,
+  .facts-cards-container,
+  .sponsors-img-container {
     flex-direction: column;
   }
   nav li a {
@@ -160,8 +174,18 @@ main {
   .team-img-container {
     grid-template-columns: repeat(1, 1fr);
   }
-  .team-content {
+  .team-content .facts-cards-container {
     padding: 0 20px;
+  }
+  .facts-cards-container {
+    gap: 20px;
+  }
+  .sponsors-img-container {
+    align-items: center;
+  }
+  .sponsors-img-container img {
+    width: 165px;
+    margin-top: 20px;
   }
 }
 
